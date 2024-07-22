@@ -45,10 +45,8 @@ test('Compare product price on Flipkart and Amazon', async ({ browser }) => {
   // wait for 5 seconds on both pages
   await fkPage.waitForTimeout(5000);
   await amzPage.waitForTimeout(5000);
-  
+
   // Close contexts
   await fkCtx.close();
-  await amzCtx.close();
-
-  
+  await amzCtx.close();  
 });
