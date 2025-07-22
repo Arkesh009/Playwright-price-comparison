@@ -48,5 +48,5 @@ test('Compare product price on Flipkart and Amazon', async ({ browser }) => {
 
   // Close contexts
   await fkCtx.close();
-  await amzCtx.close();  
+  await amzCtx.close();
 });
