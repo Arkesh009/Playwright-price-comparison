@@ -6,7 +6,7 @@ export class FlipkartPage {
   async goto() {
     await this.page.goto('https://www.flipkart.com/');
     // Close login popup if present
-    const closeBtn = this.page.locator('button', { hasText: '✕' });
+    const closeBtn = this.page.locator('button', {hasText: '✕'});
     if (await closeBtn.isVisible()) {
       await closeBtn.click();
     }
