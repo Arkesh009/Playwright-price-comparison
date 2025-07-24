@@ -42,7 +42,13 @@ test('Compare product price on Flipkart and Amazon', async ({ browser }) => {
   expect(amzPrice, 'Amazon price should be > 0').toBeGreaterThan(0);
   expect(fkPrice, `Flipkart price (₹${fkPrice}) is not less than Amazon price (₹${amzPrice})`).toBeLessThan(amzPrice);
 
+  // wait for 5 seconds on both pages
+  await fkPage.waitForTimeout(5000);
+  await amzPage.waitForTimeout(5000);
+  
   // Close contexts
   await fkCtx.close();
   await amzCtx.close();
+
+  
 });
