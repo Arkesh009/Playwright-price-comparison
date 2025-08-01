@@ -4,7 +4,7 @@ import { AmazonPage } from '../pages/amazonPage';
 
 // Compare product price on Flipkart and Amazon in parallel
 test('Compare product price on Flipkart and Amazon', async ({ browser }) => {
-  const prod = 'iPhone 15 Plus';
+  const prod = 'Iphone 16 pro';
 
   // Create browser contexts
   const [fkCtx, amzCtx] = await Promise.all([
